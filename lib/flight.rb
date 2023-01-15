@@ -7,4 +7,7 @@ attr_reader :passengers
         @passengers = []
     end
 
+    def full?
+        @passengers.length == @capacity
+    end
 end
