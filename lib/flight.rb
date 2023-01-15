@@ -22,4 +22,8 @@ attr_reader :passengers
     def [](index)
         passengers[index]
     end
+
+    def <<(passenger)
+        board_passenger(passenger)
+    end
 end
