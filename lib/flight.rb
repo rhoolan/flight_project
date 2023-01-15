@@ -18,4 +18,8 @@ attr_reader :passengers
     def list_passengers
         @passengers.map { |passenger| passenger.name }
     end
+
+    def [](index)
+        passengers[index]
+    end
 end
