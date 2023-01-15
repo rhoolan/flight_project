@@ -10,4 +10,8 @@ attr_reader :passengers
     def full?
         @passengers.length == @capacity
     end
+
+    def board_passenger(passenger)
+        @passengers << passenger if passenger.has_flight?(@flight_number) && !full?
+    end
 end
